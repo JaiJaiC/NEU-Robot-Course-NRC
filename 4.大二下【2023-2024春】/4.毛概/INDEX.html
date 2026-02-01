@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTENT：4.毛概</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-markdown-css/5.2.0/github-markdown.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <style>
+        body { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #232d37; max-width: 1200px; margin: 0 auto; padding: 20px; background-color: #f0f4f8; }
+        
+        /* Navigation Bar Layout */
+        .nav-bar { display: flex; align-items: center; margin-bottom: 15px; background: white; padding: 10px 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); gap: 10px; }
+        .nav-spacer { flex: 1; } /* Pushes sorting buttons to the right */
+        
+        .nav-btn { padding: 7px 15px; border-radius: 5px; text-decoration: none; font-size: 0.85em; font-weight: 600; transition: 0.3s; border: 1px solid #dee2e6; color: #495057; background: #fff; cursor: pointer; }
+        .nav-btn:hover { background: #f8f9fa; border-color: #003366; color: #003366; }
+        .btn-home { background: #003366; color: white !important; border: none; }
+        .btn-sort { background: #e2e8f0; border: none; color: #475569; }
+        .btn-sort.active { background: #3b82f6; color: white; }
+        
+        .header-container { text-align: center; margin-bottom: 20px; background: linear-gradient(135deg, #003366 0%, #00509d 100%); padding: 25px 20px; border-radius: 12px; color: white; }
+        
+        table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        th { background-color: #f8fafc; color: #003366; padding: 15px; font-size: 0.9em; border-bottom: 2px solid #edf2f7; text-align: center; }
+        td { padding: 12px 15px; border-bottom: 1px solid #f1f5f9; text-align: center; }
+        
+        .name-col { text-align: left !important; }
+        .name-col a { color: #2c3e50; text-decoration: none; font-weight: 600; display: block; }
+        
+        /* Keyword Highlighting */
+        .md-file { color: #e11d48 !important; }   
+        .lic-file { color: #b45309 !important; }  
+        .info-file { color: #16a34a !important; } 
+
+        .credit-val { font-weight: 800; font-family: 'Consolas', monospace; font-size: 1.1em; }
+        .cat-tag { font-size: 0.75em; font-weight: 800; padding: 3px 10px; border-radius: 4px; display: inline-block; min-width: 65px; letter-spacing: 0.5px; }
+        
+        /* Category Colors */
+        .cat-major { background: #1e3a8a; color: #ffffff; border: 1px solid #1e3a8a; }      /* CORE */
+        .cat-compulsory { background: #3b82f6; color: #ffffff; border: 1px solid #3b82f6; } /* REQUIRED */
+        .cat-elective { background: #bfdbfe; color: #1e3a8a; border: 1px solid #93c5fd; }   /* ELECTIVE */
+        
+        /* Tooltip Style (Positioned at 80%) */
+        .st-open { color: #16a34a; font-weight: 800; font-size: 0.85em; position: relative; cursor: pointer; }
+        .st-open:hover::after {
+            content: attr(data-tooltip);
+            position: absolute;
+            bottom: 80%; 
+            left: 50%;
+            transform: translateX(10%); 
+            background: rgba(30, 41, 59, 0.98);
+            color: #fff;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 500;
+            white-space: nowrap;
+            z-index: 999;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+            pointer-events: none;
+        }
+        .st-open:hover::before {
+            content: "";
+            position: absolute;
+            bottom: 70%;
+            left: 55%;
+            border: 5px solid transparent;
+            border-top-color: rgba(30, 41, 59, 0.98);
+            z-index: 999;
+        }
+
+        .st-closed { color: #e11d48; font-weight: 800; font-size: 0.85em; }
+        #preview-modal { display: none; position: fixed; z-index: 2000; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); }
+        .modal-content { background-color: white; margin: 2% auto; padding: 40px; border-radius: 12px; width: 80%; max-height: 85vh; overflow-y: auto; position: relative; }
+        .markdown-body { box-sizing: border-box; min-width: 200px; max-width: 980px; margin: 0 auto; }
+
+        .footer { text-align: center; margin-top: 30px; font-size: 0.85em; color: #64748b; padding-bottom: 20px; }
+        .footer a { color: #003366; text-decoration: none; font-weight: 600; margin: 0 10px; }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="../INDEX.html" class="nav-btn">Back</a>
+        <a href="../../INDEX.html" class="nav-btn btn-home">Home</a>
+        <div class="nav-spacer"></div>
+        <button class="nav-btn btn-sort active" onclick="sortTable('default', this)">Default</button>
+        <button class="nav-btn btn-sort" onclick="sortTable('credits', this)">Credits</button>
+        <button class="nav-btn btn-sort" onclick="sortTable('category', this)">Category</button>
+    </div>
+    
+    <div class="header-container">
+        <h1>CONTENT：4.毛概</h1>
+        <div class="sub-subtitle"></div>
+    </div>
+    
+    <table id="mainTable">
+        <thead>
+            <tr>
+                <th style="width: 60px;">INDEX</th>
+                <th class="name-col">NAME</th>
+                <th>CREDITS</th>
+                <th>CATEGORY</th>
+                <th>STATUS</th>
+                <th>AUTHOR</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody">
+            <tr data-index="01" data-weight="0" data-credits="0" data-catclass="">
+                <td style="font-weight:800; color:#003366;">01</td>
+                <td class="name-col"><a href="1.期末机考复习真题/INDEX.html" class="">📂 1.期末机考复习真题</a></td>
+                <td>--</td>
+                <td>--</td>
+                <td class="st-open" data-tooltip="Updated: 2026.02.01">OPEN</td>
+                <td style="font-weight:700; color:#64748b;">JaiJai</td>
+            </tr>
+        
+            <tr data-index="02" data-weight="0" data-credits="0" data-catclass="">
+                <td style="font-weight:800; color:#003366;">02</td>
+                <td class="name-col"><a href="2.经典品读/INDEX.html" class="">📂 2.经典品读</a></td>
+                <td>--</td>
+                <td>--</td>
+                <td class="st-open" data-tooltip="Updated: 2026.02.01">OPEN</td>
+                <td style="font-weight:700; color:#64748b;">JaiJai</td>
+            </tr>
+        
+            <tr data-index="03" data-weight="0" data-credits="0" data-catclass="">
+                <td style="font-weight:800; color:#003366;">03</td>
+                <td class="name-col"><a href="3.小组研讨/INDEX.html" class="">📂 3.小组研讨</a></td>
+                <td>--</td>
+                <td>--</td>
+                <td class="st-open" data-tooltip="Updated: 2026.02.01">OPEN</td>
+                <td style="font-weight:700; color:#64748b;">JaiJai</td>
+            </tr>
+        
+            <tr data-index="04" data-weight="0" data-credits="0" data-catclass="">
+                <td style="font-weight:800; color:#003366;">04</td>
+                <td class="name-col"><a href="4.期中/INDEX.html" class="">📂 4.期中</a></td>
+                <td>--</td>
+                <td>--</td>
+                <td class="st-open" data-tooltip="Updated: 2026.02.01">OPEN</td>
+                <td style="font-weight:700; color:#64748b;">JaiJai</td>
+            </tr>
+        
+            <tr data-index="99" data-weight="4" data-credits="0" data-catclass="">
+                <td style="font-weight:800; color:#003366;">--</td>
+                <td class="name-col"><a href="javascript:void(0)" onclick="previewMD('README.md')" class="md-file">📄 README.md</a></td>
+                <td>--</td>
+                <td>--</td>
+                <td class="st-open" data-tooltip="Updated: 2026.01.30">OPEN</td>
+                <td style="font-weight:700; color:#64748b;">JaiJai</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div id="preview-modal"><div class="modal-content"><span style="float:right; cursor:pointer; font-size:24px;" onclick="closePreview()">&times;</span><div id="markdown-content" class="markdown-body"></div></div></div>
+
+    <script>
+        // JS Sorting Logic
+        function sortTable(mode, btn) {
+            const tbody = document.getElementById('tableBody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            document.querySelectorAll('.btn-sort').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            
+            const sortedRows = rows.sort((a, b) => {
+                if (mode === 'credits') {
+                    return parseFloat(b.dataset.credits) - parseFloat(a.dataset.credits);
+                } else if (mode === 'category') {
+                    const priority = { "cat-major": 3, "cat-compulsory": 2, "cat-elective": 1, "": 0 };
+                    return priority[b.dataset.catclass] - priority[a.dataset.catclass];
+                } else {
+                    // Fallback to Weight + Natural Index
+                    if (a.dataset.weight !== b.dataset.weight) {
+                        return a.dataset.weight - b.dataset.weight;
+                    }
+                    return a.dataset.index.localeCompare(b.dataset.index);
+                }
+            });
+            
+            tbody.innerHTML = "";
+            sortedRows.forEach(row => tbody.appendChild(row));
+        }
+
+        // Markdown Preview with Local Fallback
+        async function previewMD(url) {
+            const modal = document.getElementById('preview-modal');
+            const content = document.getElementById('markdown-content');
+            try {
+                const response = await fetch(url);
+                if (!response.ok) throw new Error();
+                const text = await response.text();
+                content.innerHTML = marked.parse(text);
+                modal.style.display = "block";
+                document.body.style.overflow = "hidden";
+            } catch (e) {
+                // If local file:// protocol prevents fetch, open in new tab
+                if (window.location.protocol === 'file:') {
+                    window.open(url, '_blank');
+                } else {
+                    alert("Failed to load markdown content.");
+                }
+            }
+        }
+        function closePreview() { document.getElementById('preview-modal').style.display = "none"; document.body.style.overflow = "auto"; }
+    </script>
+
+    <div class="footer">
+        <a href="https://jaijaic.site" target="_blank">jaijaic.site</a> | 
+        <a href="../../LICENSE.txt">CC BY-NC-ND 4.0 Licensed</a> | 
+        <a href="../../STATEMENT.txt">STATEMENT.txt</a>
+    </div>
+</body>
+</html>
