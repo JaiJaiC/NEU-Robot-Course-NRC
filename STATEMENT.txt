@@ -1,0 +1,39 @@
+===========================================================
+               NEU ROBOT COURSE - FULL STATEMENT
+===========================================================
+
+[General Information]
+1. Author: JaiJai (https://jaijaic.site)
+2. Scope: 2022-2026 NEU Robotics Engineering
+3. Purpose: Personal Academic Record & Archive
+
+[Resource Usage Policy]
+This archive contains comprehensive study materials, including 
+official courseware and collaborative team projects. 
+By accessing these files, you agree to:
+- USE for personal, non-commercial, offline research only.
+- DO NOT redistribute, upload to other platforms, or monetize.
+- RESPECT the intellectual property of instructors and peers.
+
+[Academic Integrity Warning]
+Reference is NOT replacement. Users are expected to maintain 
+high standards of academic integrity. Plagiarism of any content 
+from this repository is strictly prohibited by university 
+regulations and is at the user's own risk.
+
+[Copyright & Licensing]
+Licensed under CC BY-NC-ND 4.0.
+- Attribution required.
+- Non-commercial use only.
+- No derivatives allowed.
+
+[Disclaimer]
+The author provides these materials "as is" without any 
+guarantees regarding their accuracy or alignment with current 
+course requirements. If you are the owner of any content and 
+object to its inclusion, please contact me at:
+1121015441@qq.com
+
+===========================================================
+               Build with respect, Learn with integrity.
+===========================================================
