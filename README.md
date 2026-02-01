@@ -1,29 +1,48 @@
-# 🎓 NEU Robot Course (2022-2026)
+# 🎓 NEU Robot Course (NRC)
 
-> **JaiJai's Knowledge Base** | 东北大学机器人工程本科课程全量资料库
+> **JaiJaiC's Knowledge Base** | 东北大学机器人工程本科课程全量资料库
 > 
 > 🚀 [Explore My Blog](https://jaijaic.site) | 📧 [Contact Me](mailto:1121015441@qq.com)
 
 ---
 
-## ⚠️ Note on Resources (重要资源说明)
-**本库尽可能保留了完整的学习链路，包括部分课件、团队成果及参考资料。**
-- **个人研究专用：** 以上内容仅限个人离线学术研究使用，严禁任何形式的二次分发或商业用途。
-- **版权尊重：** 所有资料版权归原作者（老师或团队成员）所有。
-- **动态更新：** 资料基于 **22届 (Class of 2022)** 课程体系，后续教学改革可能导致内容不再适用，请务必对比参考。
-
-## 📄 File Format & Ethics (格式与守则)
-- **PDF Only:** 为了排版稳定，所有报告仅提供 PDF 版本。
-- **Academic Integrity:** 资料库的存在是为了提供思路参考。**如果你选择参考本库内容，请务必完整阅读并理解逻辑，严禁直接修改封面后提交。** 这是对你自己学术生涯的最基本负责。
-
-## 🏛️ Special Note: Freshman Year (Architecture)
-- **Roboter:** 大一内容为**建筑系**期间产出，对机器人专业基本无参考价值，请直接跳过。
-- **Architecture er:** 当时 GPA 3.9 (89分)，这里的文档可作为“如何让作业达到 90+”的一个参照标杆。
+## 📽️ System Demonstration
+<video src="https://github.com/JaiJaiC/NEU-Robot-Course-NRC/raw/main/others/NRCS.mp4" controls="controls" style="max-width: 100%; height: auto;">
+</video>
 
 ---
 
-## ⚖️ License & Takedown (版权与声明)
-This project is licensed under **CC BY-NC-ND 4.0**.
-如果不慎涉及侵权或内容争议，请立即通过邮件联系我处理。
+## 1. Introduction
+**NEU Robot Course System（NRCS）** 包含了我整个大学四年的心血。我希望能在东北大学留下些什么，帮助大家打破信息差，更高效地学习。NRCS 不定期更新，欢迎各位学弟学妹关注和加入！
 
-**Email:** `1121015441@qq.com`
+不能忘记的是，许多资料里也包含了很多学长学姐的心血，我也是站在巨人的肩膀上前行，在这里非常感谢各位学长学姐的帮助！
+
+为了方便大家下载和高效使用，NRCS 做了如下处理：
+* **精简与迁移**：已经将 10G+ 的文件夹精简压缩，删除了冗余信息，目前核心资料约为 1.55GB - 3.16GB，部分超大文件以网盘链接形式存放在 `.txt` 中。
+* **格式优化**：代码（Code）全部进行 `.zip` 打包；PPT 和 Word 优先转为 `.pdf` 汇总。
+* **隐私保护**：考虑到隐私安全，我对所有个人信息（姓名、学号等）都进行了打码和删除处理。整理实属不易，感谢理解。
+* **版权声明**：由于部分资料的版权敏感性，此处的小窗口请大家珍惜，仅供个人离线研究使用。
+
+## 2. Showcase
+<div style="text-align:center;">
+  <img src="./images/NRC.png" alt="NRCS Preview" style="max-width:100%;height:auto;"/>
+</div>
+
+## 3. How To Use
+1.  **完整下载**：下载完整的 `NEU Robot Course` 文件夹。
+2.  **生成索引**：双击运行根目录下的 `Index.exe`，系统会自动遍历文件夹并生成/更新所有的 `INDEX.html` 导航文件。
+3.  **浏览器查看**：运行根目录下的 `INDEX.html`（右键 -> 打开方式 -> 选择浏览器），即可像网页一样浏览所有课程资料。
+4.  **高度自定义**：你可以将我的课程替换为你自己的内容（注意命名规范），运行 `Index.exe` 后，它就变成了你个人的课程管理系统！
+
+## 4. Open Source & Access
+由于 GitHub 空间限制和版权保护，目前仅开放了1.55GB的部分资源，
+全量资源托管于个人博客的第一篇加密文章NEU Robot Course中：https://jaijaic.site/
+---
+
+## ⚖️ License & Ethics
+* 本资料库仅供个人学习使用，严禁用于任何商业用途或违规分发。
+* 本项目采用 **CC BY-NC-ND 4.0** 许可协议。
+* 如果你参考了本库内容，请务必完整理解其逻辑，**严禁直接修改封面后提交**。这是对你自己学术生涯的最基本负责。
+* 如有侵权或内容争议，请立即通过邮件联系我：`1121015441@qq.com`
+
+---
