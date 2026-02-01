@@ -1,0 +1,19 @@
+mkdir -p ~/catkin_ws/src
+cd ~/catkin_ws/src
+catkin_init_workspace
+cd ..
+catkin_make
+
+
+roscore
+rosrun turtlesim turtlesim_node
+
+rosrun turtlesim turtle_teleop_key
+
+rosrun control_turtle detection.py
+rosrun control_turtle control.py
+
+rosrun control_turtle test.py
+
+cd devel
+source setup.bash
