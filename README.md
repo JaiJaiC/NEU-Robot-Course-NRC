@@ -32,9 +32,9 @@
 * **版权声明**：由于部分资料的版权敏感性，此处的小窗口请大家珍惜，仅供个人离线研究使用。
 
 ## 2. Showcase
-<div style="text-align:center;">
-  <img src="./images/NRC.png" alt="NRCS Preview" style="max-width:100%;height:auto;"/>
-</div>
+<p align="center">
+  <img src="images/NRC.png" alt="NRCS Preview" width="100%">
+</p>
 
 ## 3. How To Use
 1.  **完整下载**：下载完整的 `NEU Robot Course` 文件夹。
