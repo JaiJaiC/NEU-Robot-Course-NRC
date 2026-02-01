@@ -33,7 +33,7 @@
 
 ## 2. Showcase
 <p align="center">
-  <img src="others/NRC.png" alt="NRCS Preview" width="100%">
+  <img src="others/NRCS.png" alt="NRCS Preview" width="100%">
 </p>
 
 ## 3. How To Use
