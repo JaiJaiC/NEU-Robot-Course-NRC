@@ -7,8 +7,16 @@
 ---
 
 ## 📽️ System Demonstration
-<video src="https://github.com/JaiJaiC/NEU-Robot-Course-NRC/raw/main/others/NRCS.mp4" controls="controls" style="max-width: 100%; height: auto;">
-</video>
+<div align="center">
+  <video src="https://github.com/user-attachments/assets/32b1ba9c-d878-416b-8ff2-99f9ee3c515c" 
+         controls="controls" 
+         muted="muted" 
+         autoplay="autoplay" 
+         loop="loop" 
+         style="max-width: 100%; border-radius: 10px;">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 ---
 
