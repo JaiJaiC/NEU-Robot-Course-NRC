@@ -1,8 +1,8 @@
 # 🎓 NEU Robot Course (NRC)
 
-> **JaiJaiC's Knowledge Base** | 东北大学机器人工程本科课程全量资料库
-> 
-> 🚀 [Explore My Blog](https://jaijaic.site) | 📧 [Contact Me](mailto:1121015441@qq.com)
+> **NEU Robot Course System（NRCS）** 包含了我整个大学四年的心血。我希望能在东北大学留下些什么，帮助大家打破信息差，更高效地学习。
+> 不能忘记的是，许多资料里也包含了很多学长学姐和老师的心血，我也是站在巨人的肩膀上前行，在这里非常感谢各位学长学姐老师的帮助，也希望能将这份心血传递下去。
+> NRCS 不定期更新，欢迎各位学弟学妹关注和加入！
 
 ---
 
@@ -19,11 +19,11 @@
 </div>
 
 ---
-
 ## 1. Introduction
-**NEU Robot Course System（NRCS）** 包含了我整个大学四年的心血。我希望能在东北大学留下些什么，帮助大家打破信息差，更高效地学习。NRCS 不定期更新，欢迎各位学弟学妹关注和加入！
+NRCS有什么：各科的分数构成以及怎么学（md还写的不是很完善）、各科的实验报告、report（平时、期中、期末、小作业、大作业）、courseware和往年期末卷和复习资料（版权问题，暂未放出，已加密处理）
 
-不能忘记的是，许多资料里也包含了很多学长学姐的心血，我也是站在巨人的肩膀上前行，在这里非常感谢各位学长学姐的帮助！
+总控制台可以进入七个学期的课程目录，BACK键退回上一级，HOME键返回总控制台。
+NRCS支持文件搜索，支持课程按照学分、专业课排序，支持文件点击下载
 
 为了方便大家下载和高效使用，NRCS 做了如下处理：
 * **精简与迁移**：已经将 10G+ 的文件夹精简压缩，删除了冗余信息，目前核心资料约为 1.55GB - 3.16GB，部分超大文件以网盘链接形式存放在 `.txt` 中。
@@ -34,6 +34,9 @@
 ## 2. Showcase
 <p align="center">
   <img src="others/NRCS.png" alt="NRCS Preview" width="100%">
+</p>
+<p align="center">
+  <img src="others/Grades_Contribution.png" alt="Grades_Contribution" width="100%">
 </p>
 
 ## 3. How To Use
