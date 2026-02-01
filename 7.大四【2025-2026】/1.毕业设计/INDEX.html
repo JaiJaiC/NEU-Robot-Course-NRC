@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CONTENT：1.毕业设计</title>
+    <style>
+        body { font-family: 'Segoe UI', 'Microsoft YaHei', sans-serif; line-height: 1.6; color: #232d37; max-width: 1150px; margin: 0 auto; padding: 20px; background-color: #f0f4f8; }
+        .nav-bar { display: flex; justify-content: flex-start; align-items: center; margin-bottom: 15px; background: white; padding: 10px 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); gap: 15px; }
+        .nav-btn { padding: 7px 18px; border-radius: 5px; text-decoration: none; font-size: 0.9em; font-weight: 600; transition: 0.3s; border: 1px solid #dee2e6; color: #495057; background: #fff; }
+        .nav-btn:hover { background: #e9ecef; border-color: #adb5bd; }
+        .btn-home { background: #003366; color: white !important; border: none; }
+        
+        .search-container { margin-bottom: 15px; width: 100%; }
+        #searchInput { width: 100%; padding: 12px 20px; box-sizing: border-box; border: 2px solid #003366; border-radius: 8px; font-size: 16px; outline: none; }
+        
+        .header-container { text-align: center; margin-bottom: 20px; background: linear-gradient(135deg, #003366 0%, #00509d 100%); padding: 25px 20px; border-radius: 12px; color: white; box-shadow: 0 10px 25px rgba(0,51,102,0.1); }
+        h1 { margin: 0; font-size: 1.8em; letter-spacing: 1px; }
+        .sub-subtitle { font-size: 0.9em; opacity: 0.8; margin-top: 8px; font-weight: 300; }
+        
+        table { width: 100%; border-collapse: separate; border-spacing: 0; background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+        th { background-color: #f8fafc; color: #003366; padding: 15px; font-size: 0.9em; border-bottom: 2px solid #edf2f7; text-align: left; }
+        td { padding: 12px 15px; border-bottom: 1px solid #f1f5f9; }
+        
+        .num-col { font-weight: 800; color: #003366; width: 60px; text-align: center; }
+        .name-col a { color: #2c3e50; text-decoration: none; font-weight: 600; display: block; transition: 0.2s; }
+        .name-col a:hover { color: #0066cc; transform: translateX(5px); }
+        
+        /* Specific File Coloring */
+        .md-file { color: #e11d48 !important; }
+        .lic-file { color: #d97706 !important; }
+        .info-file { color: #16a34a !important; }
+        .author-tag { font-weight: 700; color: #64748b; font-size: 0.9em; }
+        
+        .footer { text-align: center; margin-top: 30px; font-size: 0.85em; color: #64748b; }
+        .footer a { color: #003366; text-decoration: none; font-weight: 600; }
+        .footer a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <a href="../INDEX.html" class="nav-btn">Back</a>
+        <a href="../../INDEX.html" class="nav-btn btn-home">Home</a>
+    </div>
+    <div class="header-container">
+        <h1>CONTENT：1.毕业设计</h1>
+        <div class="sub-subtitle"></div>
+    </div>
+    <div class="search-container">
+        <input type="text" id="searchInput" onkeyup="filterTable()" placeholder="search">
+    </div>
+    
+    <table id="fileTable">
+        <thead>
+            <tr>
+                <th class="num-col">INDEX</th>
+                <th>NAME</th>
+                <th>TYPE</th>
+                <th>AUTHOR</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td class="num-col">--</td>
+                <td class="name-col"><a href="preference/INDEX.html" class="">📂 preference</a></td>
+                <td><span style="opacity:0.6">Folder</span></td>
+                <td class="author-tag">JaiJai</td>
+            </tr>
+        
+            <tr>
+                <td class="num-col">--</td>
+                <td class="name-col"><a href="【1.5】开题/INDEX.html" class="">📂 【1.5】开题</a></td>
+                <td><span style="opacity:0.6">Folder</span></td>
+                <td class="author-tag">JaiJai</td>
+            </tr>
+        
+            <tr>
+                <td class="num-col">--</td>
+                <td class="name-col"><a href="【12.11】双选/INDEX.html" class="">📂 【12.11】双选</a></td>
+                <td><span style="opacity:0.6">Folder</span></td>
+                <td class="author-tag">JaiJai</td>
+            </tr>
+        
+            <tr>
+                <td class="num-col">--</td>
+                <td class="name-col"><a href="【12.17】2026届本科毕业设计（论文）相关文件-给教师&学生/INDEX.html" class="">📂 【12.17】2026届本科毕业设计（论文）相关文件-给教师&学生</a></td>
+                <td><span style="opacity:0.6">Folder</span></td>
+                <td class="author-tag">JaiJai</td>
+            </tr>
+        
+            <tr>
+                <td class="num-col">--</td>
+                <td class="name-col"><a href="README.md" class="md-file">📄 README.md</a></td>
+                <td><span style="opacity:0.6">MD</span></td>
+                <td class="author-tag">JaiJai</td>
+            </tr>
+        
+        </tbody>
+    </table>
+    
+    <script>
+        function filterTable() {
+            var input = document.getElementById("searchInput");
+            var filter = input.value.toUpperCase();
+            var table = document.getElementById("fileTable");
+            var tr = table.getElementsByTagName("tr");
+            for (var i = 1; i < tr.length; i++) {
+                var td = tr[i].getElementsByTagName("td")[1];
+                if (td) {
+                    var textValue = td.textContent || td.innerText;
+                    tr[i].style.display = textValue.toUpperCase().indexOf(filter) > -1 ? "" : "none";
+                }
+            }
+        }
+    </script>
+    <div class="footer">
+        <a href="https://jaijaic.site" target="_blank">https://jaijaic.site</a> | 
+        <a href="../../LICENSE.txt">CC BY-NC-ND 4.0 Licensed</a> | 
+        <a href="../../STATEMENT.txt">STATEMENT.txt</a>
+    </div>
+</body>
+</html>
