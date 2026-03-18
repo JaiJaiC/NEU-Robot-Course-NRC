@@ -97,7 +97,7 @@
     <table id="mainTable">
         <thead>
             <tr>
-                <th style="width: 60px;">index</th>
+                <th style="width: 60px;">INDEX</th>
                 <th class="name-col">NAME</th>
                 <th>CREDITS</th>
                 <th>CATEGORY</th>
@@ -106,15 +106,6 @@
             </tr>
         </thead>
         <tbody id="tableBody">
-            <tr data-index="99" data-weight="3" data-credits="0" data-catclass="">
-                <td style="font-weight:800; color:#003366;">--</td>
-                <td class="name-col"><a href="index.html" class="">📄 index.html</a></td>
-                <td>--</td>
-                <td>--</td>
-                <td class="st-open" data-tooltip="Updated: 2026.02.01">OPEN</td>
-                <td style="font-weight:700; color:#64748b;">JaiJai</td>
-            </tr>
-        
             <tr data-index="99" data-weight="3" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">--</td>
                 <td class="name-col"><a href="report(trans).docx" class="">📄 report(trans).docx</a></td>
@@ -152,7 +143,7 @@
                     const priority = { "cat-major": 3, "cat-compulsory": 2, "cat-elective": 1, "": 0 };
                     return priority[b.dataset.catclass] - priority[a.dataset.catclass];
                 } else {
-                    // Fallback to Weight + Natural index
+                    // Fallback to Weight + Natural Index
                     if (a.dataset.weight !== b.dataset.weight) {
                         return a.dataset.weight - b.dataset.weight;
                     }

@@ -97,7 +97,7 @@
     <table id="mainTable">
         <thead>
             <tr>
-                <th style="width: 60px;">index</th>
+                <th style="width: 60px;">INDEX</th>
                 <th class="name-col">NAME</th>
                 <th>CREDITS</th>
                 <th>CATEGORY</th>
@@ -108,7 +108,7 @@
         <tbody id="tableBody">
             <tr data-index="01" data-weight="0" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">01</td>
-                <td class="name-col"><a href="1.单个构成/INinindextmlclass="">📂 1.单个构成</a></td>
+                <td class="name-col"><a href="1.单个构成/index.html" class="">📂 1.单个构成</a></td>
                 <td>--</td>
                 <td>--</td>
                 <td class="st-open" data-tooltip="Updated: 2026.03.18">OPEN</td>
@@ -117,7 +117,7 @@
         
             <tr data-index="02" data-weight="0" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">02</td>
-                <td class="name-col"><a href="2.线面构成/INinindextmlclass="">📂 2.线面构成</a></td>
+                <td class="name-col"><a href="2.线面构成/index.html" class="">📂 2.线面构成</a></td>
                 <td>--</td>
                 <td>--</td>
                 <td class="st-open" data-tooltip="Updated: 2026.03.18">OPEN</td>
@@ -126,7 +126,7 @@
         
             <tr data-index="03" data-weight="0" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">03</td>
-                <td class="name-col"><a href="3.面体构成/INinindextmlclass="">📂 3.面体构成</a></td>
+                <td class="name-col"><a href="3.面体构成/index.html" class="">📂 3.面体构成</a></td>
                 <td>--</td>
                 <td>--</td>
                 <td class="st-open" data-tooltip="Updated: 2026.03.18">OPEN</td>
@@ -135,7 +135,7 @@
         
             <tr data-index="99" data-weight="0" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">--</td>
-                <td class="name-col"><a href="制作过程记录/INDindindexmllass="">📂 制作过程记录</a></td>
+                <td class="name-col"><a href="制作过程记录/index.html" class="">📂 制作过程记录</a></td>
                 <td>--</td>
                 <td>--</td>
                 <td class="st-open" data-tooltip="Updated: 2026.03.18">OPEN</td>
@@ -154,15 +154,6 @@
             <tr data-index="99" data-weight="2" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">--</td>
                 <td class="name-col"><a href="我的联评成绩（85 90 95）.jpg" class="">📄 我的联评成绩（85 90 95）.jpg</a></td>
-                <td>--</td>
-                <td>--</td>
-                <td class="st-open" data-tooltip="Updated: 2026.02.01">OPEN</td>
-                <td style="font-weight:700; color:#64748b;">JaiJai</td>
-            </tr>
-        
-            <tr data-index="99" data-weight="3" data-credits="0" data-catclass="">
-                <td style="font-weight:800; color:#003366;">--</td>
-                <td class="name-col"><a href="index.html" class="">📄 index.html</a></td>
                 <td>--</td>
                 <td>--</td>
                 <td class="st-open" data-tooltip="Updated: 2026.02.01">OPEN</td>
@@ -188,7 +179,7 @@
                     const priority = { "cat-major": 3, "cat-compulsory": 2, "cat-elective": 1, "": 0 };
                     return priority[b.dataset.catclass] - priority[a.dataset.catclass];
                 } else {
-                    // Fallback to Weight + Natural index
+                    // Fallback to Weight + Natural Index
                     if (a.dataset.weight !== b.dataset.weight) {
                         return a.dataset.weight - b.dataset.weight;
                     }
