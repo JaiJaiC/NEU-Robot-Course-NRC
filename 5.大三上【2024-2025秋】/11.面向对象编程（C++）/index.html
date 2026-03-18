@@ -81,8 +81,8 @@
 </head>
 <body>
     <div class="nav-bar">
-        <a href="../INDEX.html" class="nav-btn">Back</a>
-        <a href="../../INDEX.html" class="nav-btn btn-home">Home</a>
+        <a href="../index.html" class="nav-btn">Back</a>
+        <a href="../../index.html" class="nav-btn btn-home">Home</a>
         <div class="nav-spacer"></div>
         <button class="nav-btn btn-sort active" onclick="sortTable('default', this)">Default</button>
         <button class="nav-btn btn-sort" onclick="sortTable('credits', this)">Credits</button>
@@ -97,7 +97,7 @@
     <table id="mainTable">
         <thead>
             <tr>
-                <th style="width: 60px;">INDEX</th>
+                <th style="width: 60px;">index</th>
                 <th class="name-col">NAME</th>
                 <th>CREDITS</th>
                 <th>CATEGORY</th>
@@ -108,7 +108,7 @@
         <tbody id="tableBody">
             <tr data-index="01" data-weight="0" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">01</td>
-                <td class="name-col"><a href="1.实验20/INDEX.html" class="">📂 1.实验20</a></td>
+                <td class="name-col"><a href="1.实验20/Iiindexhtml class="">📂 1.实验20</a></td>
                 <td>--</td>
                 <td>--</td>
                 <td class="st-open" data-tooltip="Updated: 2026.03.18">OPEN</td>
@@ -117,7 +117,7 @@
         
             <tr data-index="02" data-weight="0" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">02</td>
-                <td class="name-col"><a href="2.大作业70/INDEX.html" class="">📂 2.大作业70</a></td>
+                <td class="name-col"><a href="2.大作业70/INinindextmlclass="">📂 2.大作业70</a></td>
                 <td>--</td>
                 <td>--</td>
                 <td class="st-open" data-tooltip="Updated: 2026.03.18">OPEN</td>
@@ -161,7 +161,7 @@
                     const priority = { "cat-major": 3, "cat-compulsory": 2, "cat-elective": 1, "": 0 };
                     return priority[b.dataset.catclass] - priority[a.dataset.catclass];
                 } else {
-                    // Fallback to Weight + Natural Index
+                    // Fallback to Weight + Natural index
                     if (a.dataset.weight !== b.dataset.weight) {
                         return a.dataset.weight - b.dataset.weight;
                     }

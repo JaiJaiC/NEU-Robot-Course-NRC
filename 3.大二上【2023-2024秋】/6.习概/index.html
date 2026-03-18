@@ -81,8 +81,8 @@
 </head>
 <body>
     <div class="nav-bar">
-        <a href="../INDEX.html" class="nav-btn">Back</a>
-        <a href="../../INDEX.html" class="nav-btn btn-home">Home</a>
+        <a href="../index.html" class="nav-btn">Back</a>
+        <a href="../../index.html" class="nav-btn btn-home">Home</a>
         <div class="nav-spacer"></div>
         <button class="nav-btn btn-sort active" onclick="sortTable('default', this)">Default</button>
         <button class="nav-btn btn-sort" onclick="sortTable('credits', this)">Credits</button>
@@ -97,7 +97,7 @@
     <table id="mainTable">
         <thead>
             <tr>
-                <th style="width: 60px;">INDEX</th>
+                <th style="width: 60px;">index</th>
                 <th class="name-col">NAME</th>
                 <th>CREDITS</th>
                 <th>CATEGORY</th>
@@ -108,7 +108,7 @@
         <tbody id="tableBody">
             <tr data-index="99" data-weight="0" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">--</td>
-                <td class="name-col"><a href="小班研讨/INDEX.html" class="">📂 小班研讨</a></td>
+                <td class="name-col"><a href="小班研讨/INinindextmlclass="">📂 小班研讨</a></td>
                 <td>--</td>
                 <td>--</td>
                 <td class="st-open" data-tooltip="Updated: 2026.03.18">OPEN</td>
@@ -117,7 +117,7 @@
         
             <tr data-index="99" data-weight="0" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">--</td>
-                <td class="name-col"><a href="期末/INDEX.html" class="">📂 期末</a></td>
+                <td class="name-col"><a href="期末/Iiindexhtml class="">📂 期末</a></td>
                 <td>--</td>
                 <td>--</td>
                 <td class="st-open" data-tooltip="Updated: 2026.03.18">OPEN</td>
@@ -126,7 +126,7 @@
         
             <tr data-index="99" data-weight="0" data-credits="0" data-catclass="">
                 <td style="font-weight:800; color:#003366;">--</td>
-                <td class="name-col"><a href="经典品读/INDEX.html" class="">📂 经典品读</a></td>
+                <td class="name-col"><a href="经典品读/INinindextmlclass="">📂 经典品读</a></td>
                 <td>--</td>
                 <td>--</td>
                 <td class="st-open" data-tooltip="Updated: 2026.03.18">OPEN</td>
@@ -170,7 +170,7 @@
                     const priority = { "cat-major": 3, "cat-compulsory": 2, "cat-elective": 1, "": 0 };
                     return priority[b.dataset.catclass] - priority[a.dataset.catclass];
                 } else {
-                    // Fallback to Weight + Natural Index
+                    // Fallback to Weight + Natural index
                     if (a.dataset.weight !== b.dataset.weight) {
                         return a.dataset.weight - b.dataset.weight;
                     }
